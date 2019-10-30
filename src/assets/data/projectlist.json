@@ -1,0 +1,42 @@
+[
+ {
+	 "id": "0",
+ "projecthading": "Media Server",
+ "projectdate": "July 2018",
+ "projectintro": "Using orange pi as media server for home.Open Media Vault + PLEX + SONARR + RADARR + Transmission BOT",
+ "imgsrc": "https://www.dl.dropboxusercontent.com/s/ggy9vp4b01ydvae/media_server.jpeg?dl=0",
+ "projectintroduction": "A orange pi is a single board compounter similar to the raspberry pi.It is a low power machine-15W and costs around Rs.2000.It can be used for a lot of purposes we are going to use it as a media sever for the home",
+ "projectdescription": "Buy the orange pi,memory card,powersupply,heatsink at the links given below.It is recommended to buy a version which is currently has a stable armbian operating system and has 2gb or more ram along with emmc storage for swap",
+ "projectdescription2": "Download the armbian os for the respective borad.Use etcher to flash the Arambian os into the memory card-32gb,connect the power supply and ethernet cable.After 1 to 2 mins,login into your router or fing app on your mobile and find the ip of you board.Now use putty to login into the board do the enter the username and password etc and then reboot.Now type armbian-config and go to the software and thirdparty software. Here install Open media vault, sonarr,radarr and transmissionbot. Type the ip in your browser and open the OMV console.Here configure the harddisk of all you media.Please note you harddisk should be in ext4 or all data will be lost.Now install OMV extras and plex in plugins.oraganise you meida and you are reday to go.",
+ "projectlink1": "Orange PI:http://www.orangepi.org",
+ "projectlink2": "Github link: NA",
+ "projectlink3": "Armbian Download: https://www.armbian.com/download/?tx_maker=xunlong"
+ },
+ {
+	 "id": "1",
+ "projecthading": "Add blocker",
+ "projectdate": "July 2018",
+ "projectintro": "Setting up PIhole in Orange pi to block adds thourghout the home network at DNS level using web inteface",
+ "imgsrc": "https://www.dl.dropboxusercontent.com/s/fmnhxqd6c1m5pp6/add_blocker.jpeg?dl=0",
+ "projectintroduction": "We will be Using orange Pi a single borad computer which costs only 1K to get rid of adds on all your network devices.",
+ "projectdescription": "Buy the orange pi,memory card,powersupply,heatsink at the links given below.It is recommended to buy a version which is currently has a stable armbian operating system ",
+ "projectdescription2": "Download the armbian os for the respective borad.Use etcher to flash the Arambian os into the memory card-32gb,connect the power supply and ethernet cable.After 1 to 2 mins,login into your router or fing app on your mobile and find the ip of you board.Now use putty to login into the board do the enter the username and password etc and then reboot.Now type armbian-config and go to the software and thirdparty software.Here install PIhole leaving all the setting default.You are now done open the browser and login with the passowrd provied in the last step and run it.Now go to your router admin console and configure the static ip of your orange pi in the primary dns of your router and in the secondary dns use 8.8.8.8 or 1.1.1.1.If you are running media server on the same machine then do not install lighttpd in the options.After installation is completed go to the apache or nginix server in /etc/apache and configure the pihole in sites enabled and sites activated and ports.conf use different port like 1337 instaed of default 80 of pihole.Restart the apache or ngix server and you are good to go.",
+ "projectlink1": "Orange PI:http://www.orangepi.org",
+ "projectlink2": "Github link: NA",
+ "projectlink3": "Armbian Download: https://www.armbian.com/download/?tx_maker=xunlong"
+ 
+ },
+ {
+	 "id": "2",
+ "projecthading": "Download sever",
+ "projectdate": "July 2018",
+ "projectintro": "Code up android app to set up download anywhere, by sending links to server which needs to be downloaded",
+ "imgsrc": "https://www.dl.dropboxusercontent.com/s/i4iy38pcn1z0mo6/download_server.jpeg?dl=0",
+ "projectintroduction": "This project is an extension to the media sevrer project.We will install aria2 setup its web interface.Setup scripts and also write android app to send downoads to our server to download torrents or any other files remotely.",
+ "projectdescription": "Prerequisetes are to know the crontab, bash and android functionalities.If you dont i will provide a github links to download all the source code and also the packages to be run in your system.",
+ "projectdescription2": "We will first download the aria2c  with apt install.To enable web interface we will download aria2c webinterface from the given git hub and configure the same.",
+ "projectlink1": "Orange PI:http://www.orangepi.org",
+ "projectlink2": "Github link: NA",
+ "projectlink3": "Armbian Download: https://www.armbian.com/download/?tx_maker=xunlong"
+ }
+]

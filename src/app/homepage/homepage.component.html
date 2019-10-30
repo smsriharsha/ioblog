@@ -1,0 +1,43 @@
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Kudoark blog
+      </h1>
+      <h2 class="subtitle">
+        Projects
+      </h2>
+    </div>
+  </div>
+</section>
+<div class="columns">
+  <div class="column is-three-quarters">
+
+    <div class="container">
+      <div *ngFor="let projects of Projectdetails">
+        <div class="box">
+          <img src="{{projects.imgsrc}}">
+          <h3><b>{{projects.projecthading}}</b></h3>
+          <h5><span>{{projects.projectdate}}</span></h5>
+          <p>{{projects.projectintro}}</p>
+          <p><button class="button is-info" (click)="viewproj(projects.id)"><b>READ MORE»</b></button></p>
+        </div>
+        <br>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="column is-one-quarter">
+    <div class="box" routerLink="/resume">
+      <img src="https://www.dl.dropboxusercontent.com/s/xy48mkceyglqmen/avatar.jpeg?dl=0" style="width:100%">
+      <div class="w3-container w3-white">
+        <h4><b>My Name</b></h4>
+        <p>Self learning and sharing everthing in here. Exploring free ways to do evrything, come find thing which can
+          make
+          your daily life little easier</p>
+      </div>
+    </div>
+  </div>
+</div>

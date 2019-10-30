@@ -1,0 +1,20 @@
+[
+      {
+        "Place": "test1",
+        "Education": "10th",
+        "Fromdate": "01-06-2000",
+        "Enddate": "01-04-2010"
+      },
+      {
+        "Place": "test2",
+        "Education": "12th",
+        "Fromdate": "01-06-2010",
+        "Enddate": "01-04-2012"
+      },
+      {
+        "Place": "test3",
+        "Education": "college",
+        "Fromdate": "01-06-2012",
+        "Enddate": "01-04-2016"
+      }
+    ]
