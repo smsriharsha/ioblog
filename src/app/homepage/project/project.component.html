@@ -1,79 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-.w3-bar,h1,button {font-family: "Roboto", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
-<body>
-
-
-
 <!-- Header -->
-<header class="w3-container w3-teal w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">{{projecthading}}</h1>
-</header>
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1 is-spaced has-text-centered	">
+        {{ projecthading }}
+      </h1>
+    </div>
+  </div>
+</section>
 
 <!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Introduction</h1>
-      <h5 class="w3-padding-32">{{projectdate}}</h5>
-
-      <p class="w3-text-grey">{{projectintroduction}}</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-teal"></i>
+<section class="section">
+  <div class="container">
+    <div class="columns section-margin">
+      <div>
+        <h1 class="title">Introduction</h1>
+        <h2 class="subtitle">
+          {{ projectdate }}
+        </h2>
+        <p>
+          {{ projectintroduction }}
+        </p>
+      </div>
+      <div class="padding-1">
+        <i class="fa fa-anchor"></i>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-teal w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Lets get started</h1>
-      <h5 class="w3-padding-32">{{projectdescription}}</h5>
-
-      <p class="w3-text-grey">{{projectdescription2}}</p>
+<section class="section has-background-light">
+  <div class="container">
+    <div class="columns section-margin">
+      <div class="padding-1">
+        <i class="fa fa-coffee"></i>
+      </div>
+      <div>
+        <h1 class="title">Lets get started</h1>
+        <h2 class="subtitle is-6">
+          {{ projectdescription }}
+        </h2>
+        <p>
+          {{ projectdescription2 }}
+        </p>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
+<section class="section">
+  <div class="container">
+    <div class="section-margin">
       <h1>Links</h1>
-      <p class="w3-text-grey">{{projectlink1}}</p>
-      <p class="w3-text-grey">{{projectlink2}}</p>
-      <p class="w3-text-grey">{{projectlink3}}</p>
-    </div>
-
-    <div class="w3-third w3-center">
-
+      <p class="has-text-dark">{{ projectlink1 }}</p>
+      <p class="has-text-dark">{{ projectlink2 }}</p>
+      <p class="has-text-dark">{{ projectlink3 }}</p>
     </div>
   </div>
-</div>
-
+</section>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">
-   <p>Mail at test@gmail.com</p>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <strong>Mail at test@gmail.com</strong>
+  </div>
 </footer>
-
-
-</body>
-</html>
-
-
